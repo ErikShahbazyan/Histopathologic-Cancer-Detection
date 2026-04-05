@@ -2,9 +2,9 @@
 data/*
 
 # ── Checkpoints (large files) ───────────────────────────
-checkpoints/*.pt
-checkpoints/*.pth
-./checkpoints/
+# checkpoints/*.pt
+# checkpoints/*.pth
+/checkpoints/
 
 
 # ── Generated outputs (recreated on run) ───────────────
