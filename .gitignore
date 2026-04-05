@@ -5,6 +5,10 @@ data/train_labels.csv
 !data/train/.gitkeep
 !data/test/.gitkeep
 
+# ── Checkpoints (large files) ───────────────────────────
+checkpoints/*.pt
+checkpoints/*.pth
+
 # ── Generated outputs (recreated on run) ───────────────
 logs/*
 outputs/*
