@@ -1,9 +1,5 @@
 # ── Data (download from Kaggle, never commit) ──────────
-data/train/*
-data/test/*
-data/train_labels.csv
-!data/train/.gitkeep
-!data/test/.gitkeep
+data/*
 
 # ── Checkpoints (large files) ───────────────────────────
 checkpoints/*.pt
