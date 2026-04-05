@@ -4,7 +4,7 @@ data/*
 # ── Checkpoints (large files) ───────────────────────────
 checkpoints/*.pt
 checkpoints/*.pth
-./checkpoints/ResNet_34.pt
+./checkpoints/
 
 
 # ── Generated outputs (recreated on run) ───────────────
