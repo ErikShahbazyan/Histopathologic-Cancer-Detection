@@ -7,7 +7,6 @@ data/*
 
 # ── Generated outputs (recreated on run) ───────────────
 logs/*
-outputs/*
 !logs/.gitkeep
 !outputs/.gitkeep
 
