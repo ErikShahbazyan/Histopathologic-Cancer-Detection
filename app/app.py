@@ -24,7 +24,8 @@ for entry in CFG["models"]:
         print(f"  Skipping {name} — checkpoint not found")
 
 MODEL_CHOICES = list(LOADED.keys())
-ENSEMBLE_LABEL = "Ensemble (all models)"
+ENSEMBLE_LABEL = "Ensemble (top 3 models)"
+ENSEMBLE_MODELS = ["ResNet-34", "EfficientNet-B0", "DenseNet-121"]
 ALL_CHOICES = MODEL_CHOICES + [ENSEMBLE_LABEL]
 
 DEFAULT_MODEL = (
@@ -58,13 +59,15 @@ def classify(image: Image.Image, model_choice: str):
     lines = []
 
     if model_choice == ENSEMBLE_LABEL:
-        # ── Ensemble: run every loaded model, average probabilities ──
+        # ── Ensemble: run 3 best loaded models, average probabilities ──
         if not LOADED:
             return img_rgb, "No models are loaded."
 
+        
         probs = {}
         for name, model in LOADED.items():
-            probs[name] = _predict_one(model, tensor)
+            if name in ENSEMBLE_MODELS:
+                probs[name] = _predict_one(model, tensor)
 
         avg_prob = sum(probs.values()) / len(probs)
         label    = "🔴 Cancer" if avg_prob > 0.5 else "🟢 Normal"
