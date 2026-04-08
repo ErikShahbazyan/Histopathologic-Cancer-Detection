@@ -1,7 +1,7 @@
 # ── Data (download from Kaggle, never commit) ──────────
 data/*
 
-# ── Checkpoints (large files) ───────────────────────────
+# ── Checkpoints (large files) ──────────────────────────
 /checkpoints/*
 
 
@@ -10,21 +10,21 @@ logs/*
 !logs/.gitkeep
 !outputs/.gitkeep
 
-# ── Python cache ────────────────────────────────────────
+# ── Python cache ───────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
 
-# ── OS junk ─────────────────────────────────────────────
+# ── OS junk ────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# ── Virtual environments ─────────────────────────────────
+# ── Virtual environments ────────────────────────────────
 venv/
 .venv/
 env/
 
-# ── IDE ──────────────────────────────────────────────────
+# ── IDE ─────────────────────────────────────────────────
 .idea/
 .vscode/
 *.swp

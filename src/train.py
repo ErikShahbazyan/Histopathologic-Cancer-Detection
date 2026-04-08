@@ -47,7 +47,7 @@ def train_model(model, name, train_loader, val_loader, num_epochs=None):
         num_epochs = CFG["training"]["num_epochs"]
     patience = CFG["training"]["patience"]
 
-    model     = model.to(CFG["device"])
+    model = model.to(CFG["device"])
     criterion = nn.BCEWithLogitsLoss()
     optimizer = optim.AdamW(
         model.parameters(),
