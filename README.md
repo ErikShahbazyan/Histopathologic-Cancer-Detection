@@ -158,8 +158,12 @@ bash scripts/eval.sh
 bash scripts/run_app.sh
 
 # Train from scratch (not needed — if checkpoints included)
-#You can find chackpoint in this google drive link below!
-(https://drive.google.com/drive/folders/1XYd7Zcw2ZAqQl61ZpDIeyU1CM013iS7w?usp=drive_link)
+
+You can find checkpoint in this Google Drive link below:
+
+[Google Drive](https://drive.google.com/drive/folders/1XYd7Zcw2ZAqQl61ZpDIeyU1CM013iS7w?usp=drive_link)
+
+```bash
 
 bash scripts/train.sh
 ```
