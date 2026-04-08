@@ -157,7 +157,8 @@ bash scripts/eval.sh
 # Launch Gradio web UI
 bash scripts/run_app.sh
 
-# Train from scratch (not needed — checkpoints included)
+# Train from scratch (not needed — if checkpoints included)
+#(you can find chackpoint in this google drive [link!](https://drive.google.com/drive/folders/1XYd7Zcw2ZAqQl61ZpDIeyU1CM013iS7w?usp=drive_link))
 bash scripts/train.sh
 ```
 
