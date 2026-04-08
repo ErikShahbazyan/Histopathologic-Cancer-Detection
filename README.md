@@ -159,7 +159,7 @@ bash scripts/run_app.sh
 
 # Train from scratch (not needed — if checkpoints included)
 
-#You can find checkpoint in this Google Drive link below:
+#You can find the checkpoints in this Google Drive link below:
 # https://drive.google.com/drive/folders/1XYd7Zcw2ZAqQl61ZpDIeyU1CM013iS7w?usp=drive_link
 bash scripts/train.sh
 ```
